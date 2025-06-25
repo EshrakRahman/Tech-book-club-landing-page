@@ -366,6 +366,7 @@ main .details-section {
     overflow: hidden;
     position: relative;
     margin-bottom: 7.5rem;
+    border-radius: var(--radius-24);
 }
 
 .reading-journey .journey-glow {
@@ -422,4 +423,87 @@ main .details-section {
     position: absolute;
     top: 10%;
     left: 70%;
+}
+
+/* pricing section  */
+.price-section {
+    width: 970px;
+    height: 519px;
+    margin: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.price-section h3 {
+    font-size: var(--text--preset2--font--size);
+    font-weight: var(--text--preset2--font--weight);
+    letter-spacing: var(--text--preset2--letter--spacing);
+    line-height: var(--text--preset2--line--height);
+    color: var(--neutral--900);
+    margin-bottom: var(--spacing-800);
+}
+
+.price-section .membership-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-300);
+}
+
+.membership-option .starter, .enterprise {
+    width: 286px;
+    height: 358px;
+    background-color: var(--neutral--000);
+    border: 1px solid var(--neutral--200);
+    border-radius: var(--radius-10);
+    padding: var(--spacing-600) var(--spacing-300);
+}
+
+.membership-option .pro {
+    width: 350px;
+    height: 390px;
+    background-color: var(--neutral--100);
+    border: 1px solid var(--neutral--200);
+    border-radius: var(--radius-10);
+    position: relative;
+    overflow: hidden;
+    padding: var(--spacing-600) var(--spacing-300);
+}
+
+.membership-option .pro .pro-glow {
+    position: absolute;
+    top: 0%;
+    right: -170%;
+}
+
+.starter p:first-child, .pro p:first-child, .enterprise p:first-child  {
+    font-size: var(--text--preset4--font--size);
+    font-weight: var(--text--preset4--font--weight);
+    letter-spacing: var(--text--preset4--letter--spacing);
+    line-height: var(--text--preset4--line--height);
+    color: var(--neutral--900);
+    padding-bottom: var(--spacing-300);
+}
+
+.starter p:nth-of-type(2),.pro p:nth-of-type(2),.enterprise p:nth-of-type(2) {
+    font-size: var(--text--preset3--font--size);
+    font-weight: var(--text--preset3--font--weight);
+    line-height: var(--text--preset3--line--height);
+    letter-spacing: var(--text--preset3--letter--spacing);
+    color: var(--neutral--900);
+    padding-bottom: var(--spacing-300);
+}
+
+.starter p:nth-of-type(2) span, 
+.pro p:nth-of-type(2) span,
+.enterprise p:nth-of-type(2) span {
+    color: var(--neutral--700);
+    font-size: var(--text--preset5--font--size);
+    font-weight:var(--text--preset5--regular--font--weight);
+    line-height: var(--text--preset5--line--height);
+    letter-spacing: var(--text--preset5--letter--spacing);
+    font-family: var(--font--inter);
 }
